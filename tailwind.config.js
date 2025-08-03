@@ -13,7 +13,8 @@ module.exports = {
         primary: '#34967C',
         shimmer: '#FFFFFF',
         secondary: '#161117',
-        accent: '#222222'
+        accent: '#222222',
+        tertiary: '#929292'
       }
     },
   },

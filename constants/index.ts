@@ -4,7 +4,7 @@ import ImageDesktop from '@/public/assets/Image-1.png';
 
 export const API_BASE_URL = "https://api.example.com";
 
-export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
+export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
   {
     name: "Villa Ocean Breeze",
     address: {
@@ -20,8 +20,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-6"
     },
-    image: "https://example.com/image1.jpg",
-    discount: ""
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Mountain Escape Chalet",
@@ -38,8 +134,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "5-7"
     },
-    image: "https://example.com/image2.jpg",
-    discount: "30"
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "30",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Cozy Desert Retreat",
@@ -56,8 +248,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2-3"
     },
-    image: "https://example.com/image3.jpg",
-    discount: ""
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "City Lights Penthouse",
@@ -74,8 +362,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "2-4"
     },
-    image: "https://example.com/image4.jpg",
-    discount: "15"
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "15",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Riverside Cabin",
@@ -92,8 +476,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "4-6"
     },
-    image: "https://example.com/image5.jpg",
-    discount: "20"
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "20",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Modern Beachfront Villa",
@@ -110,8 +590,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "4",
       occupants: "8-10"
     },
-    image: "https://example.com/image6.jpg",
-    discount: ""
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Lakeside Chalet",
@@ -128,8 +704,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-5"
     },
-    image: "https://example.com/image7.jpg",
-    discount: "10"
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "10",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Tropical Garden Villa",
@@ -146,8 +818,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "5-6"
     },
-    image: "https://example.com/image8.jpg",
-    discount: "25"
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "25",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Urban Loft",
@@ -164,8 +932,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2-3"
     },
-    image: "https://example.com/image9.jpg",
-    discount: ""
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Secluded Forest Cabin",
@@ -182,8 +1046,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "5-7"
     },
-    image: "https://example.com/image10.jpg",
-    discount: "40"
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "40",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Cliffside Villa",
@@ -200,8 +1160,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "4",
       occupants: "6-8"
     },
-    image: "https://example.com/image11.jpg",
-    discount: "50"
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "50",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Coastal Escape Villa",
@@ -218,8 +1274,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-6"
     },
-    image: "https://example.com/image12.jpg",
-    discount: ""
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Historical Villa",
@@ -236,8 +1388,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "2",
       occupants: "2-4"
     },
-    image: "https://example.com/image13.jpg",
-    discount: "35"
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "35",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Downtown Apartment",
@@ -254,8 +1502,103 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2"
     },
-    image: "https://example.com/image14.jpg",
-    discount: ""
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Luxury Safari Lodge",
@@ -272,8 +1615,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "4",
       occupants: "6-8"
     },
-    image: "https://example.com/image15.jpg",
-    discount: "20"
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "20",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Countryside Cottage",
@@ -290,8 +1729,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "1",
       occupants: "2-4"
     },
-    image: "https://example.com/image16.jpg",
-    discount: "25"
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "25",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Riverfront Mansion",
@@ -308,8 +1843,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "6-8"
     },
-    image: "https://example.com/image17.jpg",
-    discount: "30"
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "30",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Ski Chalet",
@@ -326,8 +1957,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-5"
     },
-    image: "https://example.com/image18.jpg",
-    discount: ""
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Island Paradise Villa",
@@ -344,8 +2071,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "5",
       occupants: "8-10"
     },
-    image: "https://example.com/image19.jpg",
-    discount: "60"
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "60",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   },
   {
     name: "Clifftop Retreat",
@@ -362,8 +2185,104 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps []  =  [
       shower: "3",
       occupants: "4-5"
     },
-    image: "https://example.com/image20.jpg",
-    discount: ""
+    image: {
+      image1: "/assets/property-image.png",
+      image2: "/assets/property-image1.png",
+      image3: "/assets/property-image2.png",
+      image4: "/assets/property-image3.png"
+    },
+    discount: "",
+    reviews: [
+      {
+        avatar: "/assets/image-review.svg",
+        name: "Kerry",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "3 years on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/Frame 118 (4).svg",
+        name: "Pooja",
+        date: "March 2024",
+        occasion: "Family trip",
+        rating: 4.5,
+        years: "1 year on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures."
+      },
+      {
+        avatar: "/assets/Frame 118.svg",
+        name: "Cindy & Ben",
+        date: "August 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "1 year on ALX",
+        comment: "I simply don't have the words to describe how incredibly beautiful the villa and its surroundings are. This is a wonderful remote spot that is simply breathtaking"
+      },
+      {
+        avatar: "/assets/image 25 (1).svg",
+        name: "Marnie",
+        date: "January 2023",
+        occasion: "Family trip",
+        rating: 4.0,
+        years: "5 years on ALX",
+        comment: "We stayed at this home for a family vacation of 7 adults (including 3 couples, 1 baby) and had a fantastic stay. The house was BEAUTIFUL and honestly better than shown in pictures,"
+      }
+    ],
+    description: `Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded sandy coves for swimming 
+                  and paddleboarding. When you’Feel like exploring the Dominican? Start the day with a hike on one of Playa Moron’s many trails. Weave your way around the gated community to find secluded 
+                  sandy coves for swimming and paddleboarding. When you’re ready to chill with friends, the beach house pool awaits. Spend the night entertaining in the outdoor lounge, sipping drinks in 
+                  the hot tub, and gazing out over incredible ocean views.
+                  
+                  <h2 style="font-width-bold">The space</h2>
+                  BEDROOM & BATHROOM• Bedroom 1 - Primary: King size bed, Ensuite bathroom with stand-alone rain shower, Dual vanity, Walk-in closet, Television, Sofa, Deck, Balcony, Ocean view
+                  `,
+    offerOne: [
+      {
+        offerImage: '/assets/mountain 1.png',
+        offerText: 'Mountain view'
+      },
+      {
+        offerImage: '/assets/chef 1.png',
+        offerText: 'Chef'
+      },
+      {
+        offerImage: '/assets/broom 1.png',
+        offerText: 'Cleaning available during stay'
+      },
+      {
+        offerImage: '/assets/pool 1.png',
+        offerText: 'Pool - infinity'
+      },
+      {
+        offerImage: '/assets/pan 1.png',
+        offerText: 'Kitchen'
+      }
+    ],
+
+    offerTwo: [
+      {
+        offerImage: '/assets/sunrise 1.png',
+        offerText: 'Shared beach access'
+      },
+      {
+        offerImage: '/assets/bell 1.png',
+        offerText: 'Butler'
+      },
+      {
+        offerImage: '/assets/shaker 1.png',
+        offerText: 'Bartender'
+      },
+      {
+        offerImage: '/assets/hot-tub 1.png',
+        offerText: 'Hot tub'
+      },
+      {
+        offerImage: '/assets/wifi 1.png',
+        offerText: 'Wifi'
+      }
+    ]
   }
 ];
 
@@ -408,7 +2327,7 @@ export const HEADERIMAGES: ImagesProps[] = [
     imageSrc: "/assets/tent 1.svg",
     name: "Camping"
   },
-    {
+  {
     imageSrc: "/assets/apartment 1.svg",
     name: "Apartment"
   },
